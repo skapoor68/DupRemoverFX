@@ -25,7 +25,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
-
 import javafx.geometry.Pos;
 import javafx.geometry.Insets;
 
