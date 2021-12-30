@@ -9,4 +9,4 @@ Finally, run:
 
 java --module-path "Path to your javafx lib folder" --add-modules javafx.controls RemoveDuplicates
 
-WARNING: Running this program does not move files to your systems trash/recyling bin. These files will be permanantly deleted from your hard drive.
+WARNING: Running this program does not move files to your system's trash/recyling bin. These files will be permanantly deleted from your hard drive.
