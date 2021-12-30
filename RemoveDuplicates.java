@@ -23,6 +23,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+
 
 import javafx.geometry.Pos;
 import javafx.geometry.Insets;
@@ -82,8 +84,10 @@ public class RemoveDuplicates extends Application {
 
     public VBox listViewHBox() {
         deleteLabel = new Label("Files to be deleted:");
-        deleteLabel.setFont(Font.font("Roboto", 16));
-        //deleteLabel.setStyle()
+
+        Font deleteLabelFont = Font.font("Roboto", FontWeight.BOLD, 16);
+
+        deleteLabel.setFont(deleteLabelFont);
 
         listView = new ListView();
 
@@ -161,7 +165,7 @@ public class RemoveDuplicates extends Application {
         String[] formatted = new String[files.length];
 
         for (int i = 0; i < files.length; i++) {
-            formatted[i] = String.format("%s\t\t\t%d Bytes", files[i].getName(), files[i].length());
+            formatted[i] = String.format("%s", files[i].getName());
         }
 
         return formatted;
@@ -183,7 +187,7 @@ public class RemoveDuplicates extends Application {
                 return name.matches(".*\\ \\(\\d*\\)\\.[A-za-z]*");
             });
 
-            if (duplicateFiles.length == 0 || duplicateFiles == null) {
+            if (duplicateFiles == null || duplicateFiles.length == 0) {
                 return;
             }
 
