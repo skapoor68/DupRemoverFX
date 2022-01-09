@@ -1,7 +1,7 @@
 # DupRemoverFX
 A JavaFx application that deletes duplicate/redundant files from your system's file manager.
 
-To run the program from the command line, ensure you are in the working directory where RemoveDuplicates.java is stored. Then, in the command line enter:
+To run the program from the command line, ensure you are in the working directory where DupRemoverFX.java is stored. Then, in the command line enter:
 
 javac --module-path "Path to your javafx lib folder" --add-modules javafx.controls DupRemoverFX.java
 
