@@ -34,7 +34,7 @@ import javafx.event.EventHandler;
  * @author Sameer Kapoor
  * A JavaFx application that removes duplicate files stored in your system file manager.
 */
-public class RemoveDuplicates extends Application {
+public class DupRemoverFX extends Application {
     private static final int SCENE_WIDTH = 625;
     private static final int SCENE_HEIGHT = 700;
 
